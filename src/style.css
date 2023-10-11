@@ -1,0 +1,161 @@
+@font-face {
+  font-family: Poppins-Bold;
+  src: url(./assets/fonts/Poppins-Bold.ttf);
+}
+@font-face {
+  font-family: Poppins-BoldItalic;
+  src: url(./assets/fonts/Poppins-BoldItalic.ttf);
+}
+@font-face {
+  font-family: Poppins-ExtraBold;
+  src: url(./assets/fonts/Poppins-ExtraBold.ttf);
+}
+@font-face {
+  font-family: Poppins-ExtraBoldItalic;
+  src: url(./assets/fonts/Poppins-ExtraBoldItalic.ttf);
+}
+@font-face {
+  font-family: Poppins-Italic;
+  src: url(./assets/fonts/Poppins-Italic.ttf);
+}
+@font-face {
+  font-family: Poppins-Regular;
+  src: url(./assets/fonts/Poppins-Regular.ttf);
+}
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Off-white: hsl(0, 0%, 94%);
+  --Light-grey: hsl(0, 0%, 86%);
+  --Smokey-grey: hsl(0, 1%, 44%);
+  --Off-black: hsl(0, 0%, 8%);
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Poppins-Regular;
+  display: grid;
+  place-content: center;
+  background-color: var(--Off-white);
+  /* overscroll-behavior-x: none; */
+  overflow-x: hidden;
+}
+main {
+  background-color: var(--White);
+  padding: 2rem;
+  border: none;
+  border-radius: 30px 30px 80px 30px;
+  width: 700px;
+  
+}
+h1 {
+  font-family: Poppins-ExtraBoldItalic;
+  font-weight: 800 !important;
+  font-size: 70px;
+}
+form {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+input {
+  font-family: Poppins-Bold;
+  font-size: 32px;
+  padding: 5px 10px;
+  width: 150px;
+  color: var(--Off-black);
+  border-radius: 5px;
+  border-width: 1px;
+}
+label {
+  color: var(--Smokey-grey);
+  font-family: Poppins-Bold;
+  display: block;
+  margin-bottom: 5px;
+}
+.btn {
+  display: flex;
+  justify-content: space-between;
+align-items: center;
+
+}
+
+hr {
+  width: 100%;
+ 
+}
+button {
+  display: flex;
+  background-color: blueviolet;
+  padding: 20px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+}
+img{
+  width: 100%;
+}
+button:hover{
+    background-color:var(--Off-black);
+}
+span {
+  color: blueviolet;
+}
+@media screen and (max-width:645px) {
+    main{
+        width: 80vw; 
+    }
+    button{
+        position: relative;
+        left: -50%;
+        width: 70px;
+    }
+    label{
+      font-size: 12px;
+    }
+    input{
+      font-size: 16px;
+        width:60px;
+        padding: 3px 6px;
+    }
+    input::placeholder{
+        font-size:16px ;
+    }
+    h1{
+       font-size: 40px;
+    }
+}
+@media screen and (max-width:375px){
+
+button{
+    padding: 15px;
+    width: 60px;
+}
+label{
+  font-size: 10px;
+  margin-bottom: 3px;
+}
+input{
+  font-size: 12px;
+    width:50px;
+    padding: 3px 6px;
+}
+input::placeholder{
+    font-size:12px ;
+}
+  h1{
+    font-size: 30px;
+  }
+}
